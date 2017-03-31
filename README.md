@@ -36,7 +36,7 @@ import ImgFallback from 'react-img-fallback'
 
 export default ({}) => {
   const Fallback = (
-    <div>
+    <pre>
                          n
               |\   |  or
              _| \-/ic
@@ -46,7 +46,7 @@ export default ({}) => {
         //    \      \
        |||     | .  .|
       ///     / \___/
-    </div>
+    </pre>
   )
 
   return (

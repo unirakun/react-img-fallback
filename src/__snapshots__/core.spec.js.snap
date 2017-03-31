@@ -1,0 +1,47 @@
+exports[`ImgFallback graphical (JSX) should add custom className 1`] = `
+<div
+  alt=""
+  className="FALLBACK"
+  onClick={undefined}
+  style={Object {}} />
+`;
+
+exports[`ImgFallback graphical (JSX) should add custom style 1`] = `
+<div
+  alt=""
+  className="FALLBACK"
+  onClick={undefined}
+  style={
+    Object {
+      "backgroundColor": "red",
+    }
+  } />
+`;
+
+exports[`ImgFallback graphical (JSX) should add source 1`] = `
+<img
+  alt=""
+  className=""
+  onClick={undefined}
+  onError={[Function]}
+  src="SOURCE_URL"
+  style={Object {}} />
+`;
+
+exports[`ImgFallback graphical (JSX) should have a default behaviour with required props 1`] = `
+<div
+  alt=""
+  className="FALLBACK"
+  onClick={undefined}
+  style={Object {}} />
+`;
+
+exports[`ImgFallback graphical (JSX) should show an error log if required props is missing 1`] = `
+<img
+  alt=""
+  className=""
+  onClick={undefined}
+  onError={[Function]}
+  src="SOURCE_URL"
+  style={Object {}} />
+`;

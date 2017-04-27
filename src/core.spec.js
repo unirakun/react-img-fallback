@@ -3,7 +3,7 @@
 
 import React from 'react'
 import renderer from 'react-test-renderer'
-import ReactTestUtils from 'react-addons-test-utils'
+import ReactTestUtils from 'react-dom/test-utils'
 import sinon from 'sinon'
 import ImgFallback from './core'
 

@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/img-has-alt */
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { onlyUpdateForPropTypes } from 'recompose'
 
 class ImgFallback extends Component {

@@ -12,6 +12,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _recompose = require('recompose');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -77,12 +81,12 @@ var ImgFallback = function (_Component) {
 }(_react.Component);
 
 ImgFallback.propTypes = {
-  style: _react.PropTypes.object,
-  className: _react.PropTypes.string,
-  src: _react.PropTypes.string,
-  alt: _react.PropTypes.string,
-  fallback: _react.PropTypes.node.isRequired,
-  onClick: _react.PropTypes.func
+  style: _propTypes2.default.object,
+  className: _propTypes2.default.string,
+  src: _propTypes2.default.string,
+  alt: _propTypes2.default.string,
+  fallback: _propTypes2.default.node.isRequired,
+  onClick: _propTypes2.default.func
 };
 
 ImgFallback.defaultProps = {

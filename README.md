@@ -1,4 +1,6 @@
 # react-img-fallback
+[![CircleCI](https://circleci.com/gh/Trampss/react-img-fallback.svg?&style=shield&circle-token=)](https://circleci.com/gh/Trampss/react-img-fallback/tree/master) [![NPM Version](https://badge.fury.io/js/react-img-fallback.svg)](https://www.npmjs.com/package/react-img-fallback) [![Coverage Status](https://coveralls.io/repos/github/Trampss/react-img-fallback/badge.svg?branch=master)](https://coveralls.io/github/Trampss/react-img-fallback?branch=master)
+
 ## Install
 `yarn add react-img-fallback`
 
@@ -36,7 +38,7 @@ export default () => {
   const ponyUrl = 'https://s-media-cache-ak0.pinimg.com/736x/fe/92/c0/fe92c04bd02a5f740a7611c6379b2878.jpg'
 
   /* Fallback Url (sick pony with horn) */
-  const fallbackUrl = 'http://sickponywithouthorn.png' 
+  const fallbackUrl = 'http://sickponywithouthorn.png'
 
   return (
     <ImgFallback
@@ -62,7 +64,7 @@ import ImgFallback from 'react-img-fallback'
 export default () => {
   /* Url for take a beautyful unicorn ! */
   const ponyUrl = 'https://s-media-cache-ak0.pinimg.com/736x/fe/92/c0/fe92c04bd02a5f740a7611c6379b2878.jpg'
-  
+
   /* Fallback Component (sick pony with horn) */
   const Fallback = (
     <pre>
@@ -77,7 +79,7 @@ export default () => {
       ///     / \___/
     </pre>
    )
-  
+
     <ImgFallback
       style={{width: '250px'}}
       src={ponyUrl}

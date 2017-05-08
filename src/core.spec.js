@@ -28,12 +28,14 @@ describe('ImgFallback', () => {
     it('should add custom className', () => snap({ className: 'custom' }))
     it('should add custom style', () => snap({ style: { backgroundColor: 'red' } }))
     it('should add source', () => snap({ src: 'SOURCE_URL' }))
+
     it('should show an error log if required props is missing', () => {
       const stub = sinon.stub(console, 'error')
       snap({}, <ImgFallback src={'SOURCE_URL'} />)
       expect(stub.calledOnce).toEqual(true)
     })
-    it('should print fallback when image is on error', () => {
+
+    it('should print fallback when image is on error [element]', () => {
       const rendered = ReactTestUtils.renderIntoDocument(<ImgFallback src={'SOURCE_URL'} {...requiredProps} />)
       let img = ReactTestUtils.findRenderedDOMComponentWithTag(rendered, 'img')
       let fallback = ReactTestUtils.scryRenderedDOMComponentsWithClass(rendered, 'FALLBACK')
@@ -48,6 +50,23 @@ describe('ImgFallback', () => {
       fallback = ReactTestUtils.findRenderedDOMComponentWithClass(rendered, 'FALLBACK')
       expect(img).toHaveLength(0)
       expect(fallback).toBeDefined()
+    })
+
+    it('should print fallback when image is on error [string]', () => {
+      const rendered = ReactTestUtils.renderIntoDocument(<ImgFallback src={'SOURCE_URL'} fallback="oups fallback" />)
+
+      // Before
+      let img = ReactTestUtils.findRenderedDOMComponentWithTag(rendered, 'img')
+      expect(img).toBeDefined()
+      expect(img.src).toEqual('SOURCE_URL')
+
+      // Fake error
+      ReactTestUtils.Simulate.error(img)
+
+      // After
+      img = ReactTestUtils.findRenderedDOMComponentWithTag(rendered, 'img')
+      expect(img).toBeDefined()
+      expect(img.src).toEqual('oups fallback')
     })
   })
 })

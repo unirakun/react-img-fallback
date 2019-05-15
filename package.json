@@ -9,7 +9,8 @@
     "Guillaume CRESPEL <guillaume.crespel@gmail.com>"
   ],
   "scripts": {
-    "build": "cross-env BABEL_ENV=cjs babel --ignore \"*.spec.js\" ./src/ --out-dir build",
+    "build": "cross-env BABEL_ENV=cjs babel --ignore \"*.spec.js\" ./src/ --out-dir build && npm run copyTypes",
+    "copyTypes": "cross-env BABEL_ENV=cjs babel --only \"*.d.ts\" ./src/ --out-dir build --copy-files",
     "lint:js": "eslint --ext js,jsx src",
     "lint": "npm-run-all --parallel lint:*",
     "test": "jest",

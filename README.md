@@ -1,5 +1,5 @@
 # react-img-fallback
-[![CircleCI](https://circleci.com/gh/alakarteio/react-img-fallback.svg?&style=shield&circle-token=)](https://circleci.com/gh/alakarteio/react-img-fallback/tree/master) [![NPM Version](https://badge.fury.io/js/react-img-fallback.svg)](https://www.npmjs.com/package/react-img-fallback) [![Coverage Status](https://coveralls.io/repos/github/Trampss/react-img-fallback/badge.svg?branch=master)](https://coveralls.io/github/Trampss/react-img-fallback?branch=master)
+[![CircleCI](https://circleci.com/gh/unirakun/react-img-fallback.svg?&style=shield&circle-token=)](https://circleci.com/gh/unirakun/react-img-fallback/tree/master) [![NPM Version](https://badge.fury.io/js/react-img-fallback.svg)](https://www.npmjs.com/package/react-img-fallback) [![Coverage Status](https://coveralls.io/repos/github/Trampss/react-img-fallback/badge.svg?branch=master)](https://coveralls.io/github/Trampss/react-img-fallback?branch=master)
 
 ## Install
 `yarn add react-img-fallback`
@@ -92,10 +92,10 @@ export default () => {
 }
 ```
 
-# About ![alakarteio](http://alakarte.io/assets/img/logo.markdown.png)
-**alakarteio** is created by two passionate french developers.
+# About uni rakun
+**uni rakun** is created by two passionate french developers.
 
-Do you want to contact them ? Go to their [website](http://alakarte.io)
+Do you want to contact them ? Go to their [website](https://unirakun.fr)
 
 <table border="0">
  <tr>
